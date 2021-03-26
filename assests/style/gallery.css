@@ -1,0 +1,103 @@
+.gallery{
+  margin-top: 5rem;
+}
+.gallery__container .gallery__title{
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+
+.gallery__container .gallery__section{
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2vh;
+  grid-auto-flow: dense;
+
+}
+.gallery__container .gallery__section .img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.9);
+  border-radius: 2px;
+}
+.gallery__container .gallery__section .img:first-child{
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  /* height: 516px; */
+}
+.gallery__container .gallery__section .img:nth-child(2n+3){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  /* height: 516px; */
+}
+.gallery__container .gallery__section .img:nth-child(4n+5){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.gallery__container .gallery__section .img:nth-child(6n+7){
+  grid-row-start: span 1;
+}
+.gallery__container .gallery__section .img:nth-child(8n+9){
+  grid-row-start: span 1;
+  grid-column-start: span 1;
+
+}
+.gallery__container .gallery__section .img img{
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  /* filter: brightness(0.5) grayscale(100); */
+  transition: 03s ease-in-out;
+}
+.gallery__container .gallery__section .img:hover img{
+  filter: brightness(1) grayscale(0);
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery__container .gallery__title{
+    font-size: 1.8em;
+    width: 400px;
+  }
+  .gallery__container p {
+    font-size: 1.2rem;
+  }
+  .main .gallery__section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .gallery{
+    display: grid;
+    place-items: center;
+
+  }
+  .gallery__container h1{
+    font-size: 1.2em;
+    width: 300px;
+    margin-bottom: -2rem;
+  }
+
+  .gallery__container .gallery__section{
+    display: block;
+
+  }
+  .gallery__container .gallery__section .img{
+    display: block;
+    height: 100%;
+    width: 90%;
+    margin: 3% ;
+  }
+  /* .gallery__container .gallery__section .img img{
+    display: block;
+    filter: brightness(1) grayscale(0);
+  } */
+}
