@@ -91,7 +91,9 @@ img{
   max-width: 100%;
   height: auto;
 }
-
+strong{
+  color: var(--first-color);
+}
 /*========== CLASS CSS ==========*/
 .section{
   padding: 4rem 0 2rem;
@@ -472,10 +474,12 @@ font-size: var(--normal-font-size);
   align-items: center;
   justify-content: space-between;
   margin-bottom: var(--mb-4);
+  align-items: center;
+
 }
 .event__title{
   color: var(--title-color);
-
+  font-weight: bold;
 
 }
 .events__section{
@@ -484,21 +488,47 @@ font-size: var(--normal-font-size);
   margin: 0 var(--mb-6);
   display: flex;
   /* flex-wrap: wrap; */
+  color: var(--title-color);
+
 
 }
 .events__section .event_section{
   /* padding: 0 0.8rem; */
-  /* width: 200px; */
-  /* height:  400px; */
+  width: 270px;
+  height:  420px;
+  background: rgba(255,255,255,0.1);
+  margin: 2px;
+  border-radius:  .5rem;
+  margin-bottom: var(--mb-4);
+ position: relative;
+
+}
+.events__section .project_section{
+  width: 270px;
+  height:  100%;
   background: rgba(255,255,255,0.1);
   margin: 2px;
   border-radius:  .5rem;
   margin-bottom: var(--mb-4);
  position: relative;
 }
+.events__section .event_section:hover{
+  transform: scale(1.04);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+}
 .event_details{
   margin: var(--mb-1) var(--mb-1);
+
 }
+.event__date{
+  margin-bottom: var(--mb-4);
+  font-size: var(--smaller-font-size);
+}
+.event__name.recent{
+  color: #00ff88;
+
+}
+
 .event__header{
   display: flex;
   justify-content: space-between;
@@ -510,6 +540,24 @@ font-size: var(--normal-font-size);
 .event__header .event__name{
   font-size: var(--h3-font-size);
     font-weight: bold;
+    white-space: nowrap;
+
+}
+.event__header .project__name{
+  font-size: var(--small-font-size);
+  overflow: hidden;
+}
+.event__header .project__type{
+  font-size: var(--smaller-font-size);
+  color: #00ff88;
+}
+.event__header .project__type.software{
+  font-size: var(--smaller-font-size);
+  color: #cc0011;
+}
+.event_details .project__desc{
+  font-size: var(--smaller-font-size);
+  line-height: 16px;
 }
 .event__header .event__data{
   font-size: var(--smaller-font-size);
@@ -523,13 +571,14 @@ font-size: var(--normal-font-size);
   /* margin: var(--mb-2) 0; */
   /* margin: 0 var(--mb-1); */
   margin-bottom: var(--mb-2);
-
-
+  font-family: var(--body-font);
+  overflow: hidden;
 
 }
 .event_section img{
   width: 100%;
   height: 60%;
+  background-size: contain;
   border-radius: .5rem .5rem 0 0;
   margin-bottom: 0.2rem;;
 }
@@ -602,6 +651,8 @@ font-size: var(--normal-font-size);
   padding:  0 var(--mb-1);
   /* width: 50%; */
   margin-bottom: var(--mb-3);
+  color: var(--title-color);
+
 }
 .accomplishment__heading{
   display: flex;
@@ -666,10 +717,12 @@ font-size: var(--normal-font-size);
 .membership__data{
   margin-bottom: var(--mb-4);
 
+
 }
 .membership__data .membership__title{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+
 }
 .membership__section{
   padding: 1rem;
@@ -721,6 +774,9 @@ font-size: var(--normal-font-size);
 .membership__contact .far{
   font-size: var(--small-font-size);
 
+}
+.membership__section:hover {
+  background: #000;
 }
 
 /* ========== FOOTER =========== */
@@ -815,7 +871,8 @@ align-items: center;
 .carousel__container #slider figure img{
   width: 20%;
   float: left;
-  /* height: 75vh; */
+  height: 100vh;
+  background-size: contain;
 }
 
 @keyframes slider {
@@ -850,14 +907,14 @@ align-items: center;
 
 
 /* =========== SLIDER ================ */
-.team__conainer{
+.team__container{
   margin-top:  var(--mb-6);
   margin-bottom: 8rem;
 }
-.team__conainer h1{
+.team__container h1{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 }
 .box{
 	width: 200px;
@@ -895,12 +952,13 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }
 .overlayer .overlayer__designation{
   font-size: var(--smaller-font-size);
   /* margin-bottom:  1.5rem; */
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
 }
 .overlayer .overlayer__title a{
   color: var(--title-color);
@@ -908,6 +966,7 @@ align-items: center;
 .overlayer .overlayer__title a:hover{
   color: var(--first-color);
 }
+
 .slider{
 	width:100%;
 	height: 100vh;
