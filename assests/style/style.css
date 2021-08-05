@@ -1,6 +1,16 @@
 /* ======= GOOGLE FONT - LATO ======== */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+body.dark-theme{
+  --body-color: #f1f1f1;
+  --title-color: #000;
+  --text-color: #171711;
+  --container_color: #27302C;
+  --dark_color: #38b6ff;
+  --logo_color: #cc0011;
+
+
+}
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -14,6 +24,7 @@
   --text-color-light: #;
   --body-color: #2A2424;
   --container-color: #;
+  --logo_color: #b28d3b;
 
   /*========== Font and typography ==========*/
   --body-font: 'Lato', sans-serif;
@@ -94,6 +105,13 @@ img{
 }
 strong{
   color: var(--first-color);
+}
+
+input{
+ border: 0;
+ outline: none;
+ color: #fff;
+
 }
 /*========== CLASS CSS ==========*/
 .section{
@@ -217,6 +235,11 @@ strong{
 
 .nav__logo:hover{
   color: var(--first-color);
+
+}
+
+.nav__logo svg:hover{
+
 }
 
 .nav__link{
@@ -331,7 +354,9 @@ strong{
   border-radius: .2rem;
   position: relative;
   text-align: center;
-
+}
+.chapter_box .chapters_link a {
+  font-size: 0.688rem;
 }
 .chapter_box.bg-blue{
   background-color:  #9BB1FF;
@@ -353,8 +378,9 @@ strong{
    white-space: pre-wrap;
 }
 .chapter_box .more_chapter{
-font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
 /* font-weight: var(--font-semi-bold); */
+ font-weight: var(--font-semi-bold);
 }
 .chapter_box img{
   width: 100%;
@@ -712,6 +738,23 @@ font-size: var(--normal-font-size);
 
 }
 
+
+/* ============== VOLUNTEER OF THE MONTH ================   */
+
+.volunteer_container{
+  display: flex;
+  /* justify-content: space-between; */
+  width: 750%:
+
+}
+
+.volunteer_img img{
+  width: 15.625rem;
+  height: 18.75rem;
+  border-radius: 5px;
+  margin: 0 10rem;
+}
+
 /* ========= BECOME A MEMBER ======== */
 .membership__container{
   margin-top: var(--mb-6);
@@ -874,6 +917,7 @@ font-size: var(--normal-font-size);
 
 /* ==========  CARSOUSELS ========== */
 .carousel__container{
+  margin-top: var(--header-height);
   margin-bottom: 3rem;
   z-index: var(--tooltip);
 }
@@ -992,6 +1036,14 @@ font-size: var(--normal-font-size);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+
+/* ======== Volunteer of the Month ========= */
+.slide-img.volunteer_img img{
+   height: 250px;
+   width: 250px;
+   object-fit: fill;
 }
 
 /* =========== ACHEVEMENTS PAGE ============= */
@@ -1113,12 +1165,18 @@ font-size: var(--normal-font-size);
     width: 30%;
   }
   .about_container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap:wrap;
-    width: 100%;
-
+    margin-top: 50px;
+     display: grid;
+     grid-template-columns: 480px 480px;
+     font-size: 24px;
+     line-height: 40px;
+  }
+  .chapter_box .chapters_link a {
+    font-size: 1.125rem;
+  }
+  .chapter_box .more_chapter{
+    font-size: var(--h3-font-size);
+    line-height: 24px;
   }
   .membership__section .membership__desc{
     margin: 0 var(--mb-2);
@@ -1135,4 +1193,6 @@ font-size: var(--normal-font-size);
   .accomplishment__section{
     width: 50%;
   }
+
+
 }

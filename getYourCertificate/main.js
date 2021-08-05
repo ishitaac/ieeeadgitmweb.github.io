@@ -73,7 +73,7 @@ function submitDetails(){
   if(name=="" || email==""){
     window.alert("Please enter the fields")
   }
-  else{ 
+  else{
   form_container.style.display ="none";
   loadingBtn.style.display ="block";
   var http = new XMLHttpRequest();
