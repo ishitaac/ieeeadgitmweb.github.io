@@ -52,7 +52,7 @@ class Particle {
         //draw a circle and fill it
         //at posX, posY ,of size, fromAngle 0rad ,to 2pi Rad
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-        ctx.fillStyle = "#3131b9"
+        ctx.fillStyle = "#0071E3"
         ctx.fill();
 
     }
