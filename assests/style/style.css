@@ -554,9 +554,10 @@ input{
   margin-bottom: var(--mb-4);
   font-size: var(--smaller-font-size);
 }
-.event__name.recent{
+.event__header .event__name.recent{
   color: #00ff88;
-
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .event__header{
