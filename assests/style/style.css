@@ -575,6 +575,7 @@ input{
 
 }
 .event__header .project__name{
+  color: white;
   font-size: var(--small-font-size);
   overflow: hidden;
 }
@@ -589,6 +590,7 @@ input{
 .event_details .project__desc{
   font-size: var(--smaller-font-size);
   line-height: 16px;
+  color: white;
 }
 .event__header .event__data{
   font-size: var(--smaller-font-size);
