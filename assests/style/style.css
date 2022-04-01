@@ -555,7 +555,7 @@ input{
   font-size: var(--smaller-font-size);
 }
 .event__header .event__name.recent{
-  color: #00ff88;
+  color: powderblue;
   font-size: 16px;
   line-height: 16px;
 }
