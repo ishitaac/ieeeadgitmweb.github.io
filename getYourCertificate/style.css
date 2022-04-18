@@ -6,15 +6,17 @@
 
 @font-face {
 	font-family: 'Playlist Script';
-	src: url('Playlist Script.otf'); 
+	src: url('Playlist Script.otf');
 }
 
  body{
   font-family: 'Pacifico','Poppins';
   overflow: hidden;
-  background: #ebf5fd;
+  background: #2A2424;
 }
-
+/* option{
+  background: red;
+} */
 .loading {
 	position: fixed;
 	left: 0px;
@@ -39,7 +41,7 @@
   }
   .mobile{
     display: block;
-  } 
+  }
 }
 /* .btnCenter {
   margin: 0;
@@ -76,6 +78,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 form {
@@ -87,8 +90,9 @@ form {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ebf5fd;
-  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8),
-  5px 5px 15px rgba(0,0,0,0.1);
+  /* box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), */
+  /* 5px 5px 15px rgba(0,0,0,0.1); */
+  border: 1px solid #000;
 }
 .logoclass{
   display: flex;
@@ -258,7 +262,7 @@ form h2{
    }
    .container .canvas{
     position: absolute;
-    height: 540x;
+    height: 540px;
     width: 360px;
     top: 50%;
     left: 50%;
