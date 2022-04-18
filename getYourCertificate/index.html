@@ -1,15 +1,10 @@
-HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.png" type="image/png">
-
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
- <link rel="shortcut icon" href="assests\img\favicon.png" type="image/png">
-
+  <link rel="stylesheet" href="getYourCertificate\style.css">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Pacifico&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
@@ -17,8 +12,7 @@ HTML
   <title>Get Your Certificate</title>
 </head>
 <body>
-  <canvas id="canvas1"></canvas>
-
+  <img  class="wave" src="getYourCertificate\Images\wave.png">
    <div class="container">
     <div class="loading" id="loading"></div>
     <h1 class="mobile">Open desktop to generate the Certificate</h1>
@@ -26,11 +20,11 @@ HTML
      <div class="login-container" id="login-container">
        <form  action="index.html">
          <div class="logoclass">
-         <a href="https://ieeeadgitm.com/"><img class="logo" src="ieeelogo.png" alt=""></a>
+         <img class="logo" src="getYourCertificate\Images\IEEE ADGITMLogo.png" alt="">
 
          </div>
          <h2 style="	font-family: 'Playlist Script';
-	src: url('Playlist Script.otf'); "  class="text">Congratulations !</h2>
+	src: url('Playlist Script.otf'); ">Congratulations !</h2>
          <div class="input-div">
             <!-- <div class="i">
               <p>Choose the event:</p>
@@ -65,7 +59,7 @@ HTML
             </div>
           </div>
           <button type="button" class="btn" id="btn" name="button" onClick='submitDetails();'>Get Your Certificate</button>
-          <p>Facing any Problem? <a href="mailto: ieeeniec123@gmail.com">Click Here</a></p>
+          <p>Facing any Problem ?</p>
          </div>
        </form>
      </div>
@@ -73,9 +67,7 @@ HTML
       <button type="button" class="btn" id="btn" name="button" onClick='download_image();'>Download</button>
      </div>      -->
    </div>
-
-   <script src="particle.js"></script>
-<script src="main.js"></script>
+<script src="getYourCertificate\main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </body>
 </html>
